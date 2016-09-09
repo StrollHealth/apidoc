@@ -792,7 +792,7 @@ Remember — a happy user is an authenticated user!
              "</span>userId<span class="s2">": 1,
              "</span>practiceId<span class="s2">": 3,
              "</span>appointment_id<span class="s2">": 301,
-             "</span>faxDTO<span class="s2">": 
+             "</span>faxDTO<span class="s2">":
               { "</span>member_ID<span class="s2">": "",
                 "</span>insurance_carrier<span class="s2">": "</span>Self<span class="s2">",
                 "</span>dob<span class="s2">": "</span>1980-01-01<span class="s2">",
@@ -863,261 +863,261 @@ Remember — a happy user is an authenticated user!
                 "</span>patientFirstName<span class="s2">": "</span>John<span class="s2">",
                 "</span>patientEmail<span class="s2">": "</span>john@johndoe.com<span class="s2">",
                 "</span>userId<span class="s2">": 1,
-                "</span>practiceId<span class="s2">": 3 } }"</span> <span class="se">\</span>
-                <span class="sb">```</span>
-
-<span class="gp">&gt; </span><span class="s1">'http://localhost:9090/sh/faxrequests'</span>
-<span class="gp">&gt; </span>The above <span class="nb">command </span>returns JSON structured like this:
-
-<span class="sb">```</span>json
-<span class="o">{</span>
-  <span class="s2">"meta"</span>: <span class="o">{</span>
-    <span class="s2">"href"</span>: <span class="s2">"/pendingFaxRequests/1684"</span>,
-    <span class="s2">"mediaType"</span>: <span class="s2">"application/vnd.sh-v1.0+json"</span>
-  <span class="o">}</span>,
-  <span class="s2">"id"</span>: 1684,
-  <span class="s2">"faxRequestId"</span>: 1684,
-  <span class="s2">"appointment"</span>: <span class="o">{</span>
-    <span class="s2">"meta"</span>: <span class="o">{</span>
-      <span class="s2">"href"</span>: null,
-      <span class="s2">"mediaType"</span>: <span class="s2">"application/vnd.sh-v1.0+json"</span>
-    <span class="o">}</span>,
-    <span class="s2">"appointmentId"</span>: 302,
-    <span class="s2">"equipmentId"</span>: 0,
-    <span class="s2">"patientId"</span>: 6209,
-    <span class="s2">"facilityId"</span>: 368,
-    <span class="s2">"faxRequestId"</span>: 1684,
-    <span class="s2">"startTime"</span>: 28800000,
-    <span class="s2">"endTime"</span>: 28800000,
-    <span class="s2">"cptCode"</span>: <span class="s2">"51798"</span>,
-    <span class="s2">"cost"</span>: 160,
-    <span class="s2">"reasonNotYetScheduled"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"stillWantToSchedule"</span>: <span class="nb">true</span>,
-    <span class="s2">"orderStatus"</span>: null,
-    <span class="s2">"patientDTO"</span>: <span class="o">{</span>
-      <span class="s2">"meta"</span>: <span class="o">{</span>
-        <span class="s2">"href"</span>: <span class="s2">"/patients/6209"</span>,
-        <span class="s2">"mediaType"</span>: <span class="s2">"application/vnd.sh-v1.0+json"</span>
-      <span class="o">}</span>,
-      <span class="s2">"id"</span>: 6209,
-      <span class="s2">"autopilotContactId"</span>: <span class="s2">"person_8BF27AF4-690E-426B-91F0-D6BF1C7B647D"</span>,
-      <span class="s2">"firstName"</span>: <span class="s2">"John"</span>,
-      <span class="s2">"lastName"</span>: <span class="s2">"Doe"</span>,
-      <span class="s2">"birthDate"</span>: <span class="s2">"1980-01-01 00:00:00.0"</span>,
-      <span class="s2">"gender"</span>: <span class="s2">"M"</span>,
-      <span class="s2">"email"</span>: <span class="s2">"john@johndoe.com"</span>,
-      <span class="s2">"zip"</span>: <span class="s2">"94109"</span>,
-      <span class="s2">"paySpecDTO"</span>: <span class="o">{</span>
-        <span class="s2">"pi"</span>: <span class="s2">"-1"</span>,
-        <span class="s2">"payerName"</span>: <span class="s2">"Self"</span>,
-        <span class="s2">"mi"</span>: <span class="s2">""</span>
-      <span class="o">}</span>,
-      <span class="s2">"miInvalid"</span>: <span class="nb">false</span>,
-      <span class="s2">"rejectReason"</span>: null,
-      <span class="s2">"phoneNumber"</span>: <span class="s2">"(123) 456-7890"</span>,
-      <span class="s2">"phoneNumberType"</span>: <span class="s2">"Cell"</span>,
-      <span class="s2">"agreedToTerms"</span>: <span class="nb">true</span>,
-      <span class="s2">"termVersion"</span>: <span class="s2">"1.0"</span>,
-      <span class="s2">"middleInitital"</span>: null
-    <span class="o">}</span>
-  <span class="o">}</span>,
-  <span class="s2">"patientId"</span>: 6209,
-  <span class="s2">"userId"</span>: 1,
-  <span class="s2">"practiceId"</span>: 0,
-  <span class="s2">"patientLastName"</span>: <span class="s2">"Doe"</span>,
-  <span class="s2">"patientFirstName"</span>: <span class="s2">"John"</span>,
-  <span class="s2">"patientEmail"</span>: <span class="s2">"john@johndoe.com"</span>,
-  <span class="s2">"patientPhoneNumber"</span>: <span class="s2">"(123) 456-7890"</span>,
-  <span class="s2">"referringPhysicianName"</span>: <span class="s2">"James Smith"</span>,
-  <span class="s2">"referringPhysicianId"</span>: -1,
-  <span class="s2">"currentFacilityId"</span>: -1,
-  <span class="s2">"currentFacilityName"</span>: null,
-  <span class="s2">"cptCode"</span>: <span class="s2">"51798"</span>,
-  <span class="s2">"facilityFaxRequestType"</span>: 0,
-  <span class="s2">"patientFaxRequestType"</span>: 0,
-  <span class="s2">"physicianFaxRequestType"</span>: 0,
-  <span class="s2">"orderStatus"</span>: <span class="s2">"AWAITING_SCHED"</span>,
-  <span class="s2">"productionPatientPortal"</span>: null,
-  <span class="s2">"sendFaxToFacility"</span>: <span class="nb">false</span>,
-  <span class="s2">"sendFaxToPatient"</span>: <span class="nb">false</span>,
-  <span class="s2">"sendFaxToPhysician"</span>: <span class="nb">false</span>,
-  <span class="s2">"patientFaxStatus"</span>: <span class="s2">"PENDING"</span>,
-  <span class="s2">"physicianFaxStatus"</span>: <span class="s2">"PENDING"</span>,
-  <span class="s2">"facilityFaxStatus"</span>: <span class="s2">"PENDING"</span>,
-  <span class="s2">"lastUpdateDate"</span>: 1471909348440,
-  <span class="s2">"createDate"</span>: 1471909348440,
-  <span class="s2">"createDateAsString"</span>: <span class="s2">"08-22-2016"</span>,
-  <span class="s2">"faxDTO"</span>: <span class="o">{</span>
-    <span class="s2">"meta"</span>: <span class="o">{</span>
-      <span class="s2">"href"</span>: null,
-      <span class="s2">"mediaType"</span>: <span class="s2">"application/vnd.sh-v1.0+json"</span>
-    <span class="o">}</span>,
-    <span class="s2">"cash_alert"</span>: null,
-    <span class="s2">"mammogram"</span>: null,
-    <span class="s2">"facility_fax"</span>: <span class="s2">"(844) 787-6555"</span>,
-    <span class="s2">"referring_physician_fax"</span>: <span class="s2">"(844) 787-6555"</span>,
-    <span class="s2">"referring_physician_NPI"</span>: <span class="s2">"123456"</span>,
-    <span class="s2">"referring_physician_name"</span>: <span class="s2">"James Smith"</span>,
-    <span class="s2">"facility_name"</span>: <span class="s2">"Norcal Imaging San Leandro"</span>,
-    <span class="s2">"referring_physician_phone"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"insurance_carrier"</span>: <span class="s2">"Self"</span>,
-    <span class="s2">"estimate_out_of_pocket_cost"</span>: <span class="s2">"</span><span class="nv">$160</span><span class="s2">.00"</span>,
-    <span class="s2">"cpt_code"</span>: <span class="s2">"51798"</span>,
-    <span class="s2">"plan"</span>: null,
-    <span class="s2">"send_CD_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"send_patient_with_CD_checkbox"</span>: <span class="nb">true</span>,
-    <span class="s2">"send_films_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"send_patient_with_films_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"courier_films_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"courier_films_to_name"</span>: <span class="s2">""</span>,
-    <span class="s2">"courier_films_to_address"</span>: <span class="s2">""</span>,
-    <span class="s2">"procedure_short_description"</span>: <span class="s2">"Ultrasound Bladder, Post-Void"</span>,
-    <span class="s2">"icd10_code"</span>: null,
-    <span class="s2">"comparison_study_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"clinical_indication"</span>: <span class="s2">"this is a test"</span>,
-    <span class="s2">"special_instructions"</span>: <span class="s2">""</span>,
-    <span class="s2">"medication_provided_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"medication_provided_description"</span>: <span class="s2">""</span>,
-    <span class="s2">"procedure_locations"</span>: null,
-    <span class="s2">"previous_MRIMRA_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"symptom_onset_date"</span>: <span class="s2">""</span>,
-    <span class="s2">"claustrophobic_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"pacemaker_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"pacemaker_description"</span>: <span class="s2">""</span>,
-    <span class="s2">"other_implanted_metal_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"other_implanted_metal_description"</span>: <span class="s2">""</span>,
-    <span class="s2">"iv_contrast_allergy_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"creatinine"</span>: <span class="s2">""</span>,
-    <span class="s2">"iv_contrast_allergy_description"</span>: null,
-    <span class="s2">"oral_contrast_allergy_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"oral_contrast_allergy_description"</span>: <span class="s2">""</span>,
-    <span class="s2">"renal_disease_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"diabetes_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"other_allergies_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"other_allergies_description"</span>: <span class="s2">""</span>,
-    <span class="s2">"previous_MRIMRA_date"</span>: <span class="s2">""</span>,
-    <span class="s2">"creatinine_date"</span>: <span class="s2">""</span>,
-    <span class="s2">"taking_metformin_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"referral_date"</span>: <span class="s2">"2016-08-22"</span>,
-    <span class="s2">"referring_physician_signature"</span>: <span class="s2">"test"</span>,
-    <span class="s2">"eligibility_validated_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"dob"</span>: <span class="s2">"1980-01-01"</span>,
-    <span class="s2">"facility_address_1"</span>: <span class="s2">"2450 Washington Avenue"</span>,
-    <span class="s2">"facility_address_2"</span>: <span class="s2">"Suite 120"</span>,
-    <span class="s2">"facility_address_3"</span>: <span class="s2">"San Leandro, CA 94577"</span>,
-    <span class="s2">"facility_phone"</span>: <span class="s2">"(510) 351-7734"</span>,
-    <span class="s2">"referral_ID"</span>: <span class="s2">"1"</span>,
-    <span class="s2">"patient_name"</span>: <span class="s2">"John Doe"</span>,
-    <span class="s2">"male_checkbox"</span>: <span class="nb">true</span>,
-    <span class="s2">"female_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"pregnant_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"patient_phone_number"</span>: <span class="s2">"(123) 456-7890"</span>,
-    <span class="s2">"cell_checkbox"</span>: <span class="nb">true</span>,
-    <span class="s2">"office_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"home_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"primary_language"</span>: <span class="s2">""</span>,
-    <span class="s2">"member_ID"</span>: <span class="s2">""</span>,
-    <span class="s2">"verified_eligibility_date"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"received_prior_auth_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"prior_auth_number"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"good_until_date"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"service_type"</span>: null,
-    <span class="s2">"in_network_copay"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"in_network_coinsurance"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"in_network_single_maximum_total"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"in_network_single_maximum_remaining"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"in_network_single_deductible_total"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"in_network_single_deductible_remaining"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"in_network_family_maximum_total"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"in_network_family_maximum_remaining"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"in_network_family_deductible_total"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"in_network_family_deductible_remaining"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"out_network_copay"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"out_network_coinsurance"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"out_network_single_maximum_remaining"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"out_network_single_deductible_remaining"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"out_network_single_deductible_total"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"out_network_single_maximum_total"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"out_network_family_maximum_total"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"out_network_family_maximum_remaining"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"out_network_family_deductible_total"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"out_network_family_deductible_remaining"</span>: <span class="s2">"N/A"</span>,
-    <span class="s2">"referring_physician_address"</span>: <span class="s2">"null null Berkeley CA"</span>,
-    <span class="s2">"physician_portal_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"physician_portal_url"</span>: <span class="s2">""</span>,
-    <span class="s2">"fax_written_report_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"fax_STAT_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"phone_STAT_checkbox"</span>: <span class="nb">false</span>,
-    <span class="s2">"phone_call_report_checkbox"</span>: <span class="nb">false</span>
-  <span class="o">}</span>,
-  <span class="s2">"costsDTO"</span>: <span class="o">{</span>
-    <span class="s2">"meta"</span>: <span class="o">{</span>
-      <span class="s2">"href"</span>: null,
-      <span class="s2">"mediaType"</span>: <span class="s2">"application/vnd.sh-v1.0+json"</span>
-    <span class="o">}</span>,
-    <span class="s2">"costDTOs"</span>: <span class="o">[]</span>,
-    <span class="s2">"insuranceDTO"</span>: <span class="o">{</span>
-      <span class="s2">"patientId"</span>: null,
-      <span class="s2">"serviceType"</span>: null,
-      <span class="s2">"deductDate"</span>: null,
-      <span class="s2">"plan"</span>: null,
-      <span class="s2">"payerId"</span>: null,
-      <span class="s2">"payer"</span>: null,
-      <span class="s2">"inIndividDeductTotal"</span>: 0,
-      <span class="s2">"outIndividDeductTotal"</span>: 0,
-      <span class="s2">"inIndividDeductRemain"</span>: 0,
-      <span class="s2">"outIndividDeductRemain"</span>: 0,
-      <span class="s2">"inFamilyDeductTotal"</span>: 0,
-      <span class="s2">"outFamilyDeductTotal"</span>: 0,
-      <span class="s2">"inFamilyDeductRemain"</span>: 0,
-      <span class="s2">"outFamilyDeductRemain"</span>: 0,
-      <span class="s2">"inIndividMaxTotal"</span>: 0,
-      <span class="s2">"outIndividMaxTotal"</span>: 0,
-      <span class="s2">"inIndividMaxRemain"</span>: 0,
-      <span class="s2">"outIndividMaxRemain"</span>: 0,
-      <span class="s2">"inFamilyMaxTotal"</span>: 0,
-      <span class="s2">"outFamilyMaxTotal"</span>: 0,
-      <span class="s2">"inFamilyMaxRemain"</span>: 0,
-      <span class="s2">"outFamilyMaxRemain"</span>: 0,
-      <span class="s2">"incopay"</span>: 0,
-      <span class="s2">"incopayOutpatient"</span>: 0,
-      <span class="s2">"outcopay"</span>: 0,
-      <span class="s2">"incoinsurance"</span>: 0,
-      <span class="s2">"outcoinsurance"</span>: 0,
-      <span class="s2">"tier1Deduct"</span>: 0,
-      <span class="s2">"tier1FamilyDeduct"</span>: 0,
-      <span class="s2">"tier1Remain"</span>: 0,
-      <span class="s2">"tier1FamilyRemain"</span>: 0,
-      <span class="s2">"tier1MaxDeduct"</span>: 0,
-      <span class="s2">"tier1FamilyMaxDeduct"</span>: 0,
-      <span class="s2">"tier1MaxRemain"</span>: 0,
-      <span class="s2">"tier1FamilyMaxRemain"</span>: 0,
-      <span class="s2">"tier1Copay"</span>: 0,
-      <span class="s2">"tier1Coinsurance"</span>: 0
-    <span class="o">}</span>,
-    <span class="s2">"notes"</span>: null
-  <span class="o">}</span>,
-  <span class="s2">"rfaPhysicianFaxRequestType"</span>: <span class="s2">"0"</span>,
-  <span class="s2">"pr2PhysicianFaxRequestType"</span>: <span class="s2">"0"</span>,
-  <span class="s2">"pr2FaxDTO"</span>: null,
-  <span class="s2">"rfaFaxDTO"</span>: null,
-  <span class="s2">"imageDTO"</span>: <span class="o">{</span>
-    <span class="s2">"meta"</span>: <span class="o">{</span>
-      <span class="s2">"href"</span>: null,
-      <span class="s2">"mediaType"</span>: <span class="s2">"application/vnd.sh-v1.0+json"</span>
-    <span class="o">}</span>,
-    <span class="s2">"encodedImage"</span>: <span class="s2">""</span>,
-    <span class="s2">"minWidth"</span>: 1225,
-    <span class="s2">"minHeight"</span>: 1585
-  <span class="o">}</span>,
-  <span class="s2">"partner"</span>: null,
-  <span class="s2">"chosenFacilityId"</span>: null,
-  <span class="s2">"appointmentStart"</span>: null,
-  <span class="s2">"appointmentEnd"</span>: null,
-  <span class="s2">"sendFaxToClaimsAdministrator"</span>: <span class="nb">false</span>,
-  <span class="s2">"sendFaxToClaimsAdministratorCompany"</span>: <span class="nb">false</span>
-<span class="o">}</span>
+                "</span>practiceId<span class="s2">": 3 } }"</span>
 </code></pre>
+
+<blockquote>
+<p>&lsquo;http://localhost:9090/sh/faxrequests&rsquo;
+The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/pendingFaxRequests/1684"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"mediaType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/vnd.sh-v1.0+json"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1684</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"faxRequestId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1684</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"appointment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"href"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"mediaType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/vnd.sh-v1.0+json"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"appointmentId"</span><span class="p">:</span><span class="w"> </span><span class="mi">302</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"equipmentId"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"patientId"</span><span class="p">:</span><span class="w"> </span><span class="mi">6209</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"facilityId"</span><span class="p">:</span><span class="w"> </span><span class="mi">368</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"faxRequestId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1684</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"startTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">28800000</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"endTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">28800000</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"cptCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"51798"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"cost"</span><span class="p">:</span><span class="w"> </span><span class="mi">160</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"reasonNotYetScheduled"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"stillWantToSchedule"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"orderStatus"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"patientDTO"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/patients/6209"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"mediaType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/vnd.sh-v1.0+json"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">6209</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"autopilotContactId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"person_8BF27AF4-690E-426B-91F0-D6BF1C7B647D"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Doe"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1980-01-01 00:00:00.0"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"john@johndoe.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"zip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"94109"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"paySpecDTO"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"pi"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-1"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"payerName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Self"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"mi"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"miInvalid"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"rejectReason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"phoneNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(123) 456-7890"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"phoneNumberType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cell"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"agreedToTerms"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"termVersion"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"middleInitital"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"patientId"</span><span class="p">:</span><span class="w"> </span><span class="mi">6209</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"practiceId"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"patientLastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Doe"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"patientFirstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"patientEmail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"john@johndoe.com"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"patientPhoneNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(123) 456-7890"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"referringPhysicianName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"James Smith"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"referringPhysicianId"</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"currentFacilityId"</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"currentFacilityName"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"cptCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"51798"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"facilityFaxRequestType"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"patientFaxRequestType"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"physicianFaxRequestType"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"orderStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AWAITING_SCHED"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"productionPatientPortal"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"sendFaxToFacility"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"sendFaxToPatient"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"sendFaxToPhysician"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"patientFaxStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PENDING"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"physicianFaxStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PENDING"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"facilityFaxStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PENDING"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"lastUpdateDate"</span><span class="p">:</span><span class="w"> </span><span class="mi">1471909348440</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"createDate"</span><span class="p">:</span><span class="w"> </span><span class="mi">1471909348440</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"createDateAsString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08-22-2016"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"faxDTO"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"href"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"mediaType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/vnd.sh-v1.0+json"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"cash_alert"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"mammogram"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"facility_fax"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(844) 787-6555"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"referring_physician_fax"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(844) 787-6555"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"referring_physician_NPI"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"referring_physician_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"James Smith"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"facility_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Norcal Imaging San Leandro"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"referring_physician_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"insurance_carrier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Self"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"estimate_out_of_pocket_cost"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$160.00"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"cpt_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"51798"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"plan"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"send_CD_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"send_patient_with_CD_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"send_films_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"send_patient_with_films_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"courier_films_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"courier_films_to_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"courier_films_to_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"procedure_short_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ultrasound Bladder, Post-Void"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"icd10_code"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"comparison_study_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"clinical_indication"</span><span class="p">:</span><span class="w"> </span><span class="s2">"this is a test"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"special_instructions"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"medication_provided_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"medication_provided_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"procedure_locations"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"previous_MRIMRA_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"symptom_onset_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"claustrophobic_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"pacemaker_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"pacemaker_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"other_implanted_metal_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"other_implanted_metal_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"iv_contrast_allergy_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"creatinine"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"iv_contrast_allergy_description"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"oral_contrast_allergy_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"oral_contrast_allergy_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"renal_disease_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"diabetes_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"other_allergies_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"other_allergies_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"previous_MRIMRA_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"creatinine_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"taking_metformin_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"referral_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-08-22"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"referring_physician_signature"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"eligibility_validated_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1980-01-01"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"facility_address_1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2450 Washington Avenue"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"facility_address_2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Suite 120"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"facility_address_3"</span><span class="p">:</span><span class="w"> </span><span class="s2">"San Leandro, CA 94577"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"facility_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(510) 351-7734"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"referral_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"patient_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"male_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"female_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"pregnant_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"patient_phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(123) 456-7890"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"cell_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"office_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"home_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"primary_language"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"member_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"verified_eligibility_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"received_prior_auth_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"prior_auth_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"good_until_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"service_type"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"in_network_copay"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"in_network_coinsurance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"in_network_single_maximum_total"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"in_network_single_maximum_remaining"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"in_network_single_deductible_total"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"in_network_single_deductible_remaining"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"in_network_family_maximum_total"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"in_network_family_maximum_remaining"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"in_network_family_deductible_total"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"in_network_family_deductible_remaining"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"out_network_copay"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"out_network_coinsurance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"out_network_single_maximum_remaining"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"out_network_single_deductible_remaining"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"out_network_single_deductible_total"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"out_network_single_maximum_total"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"out_network_family_maximum_total"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"out_network_family_maximum_remaining"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"out_network_family_deductible_total"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"out_network_family_deductible_remaining"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N/A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"referring_physician_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null null Berkeley CA"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"physician_portal_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"physician_portal_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"fax_written_report_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"fax_STAT_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"phone_STAT_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"phone_call_report_checkbox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"costsDTO"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"href"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"mediaType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/vnd.sh-v1.0+json"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"costDTOs"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="nt">"insuranceDTO"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"patientId"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"serviceType"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"deductDate"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"plan"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"payerId"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"payer"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"inIndividDeductTotal"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"outIndividDeductTotal"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"inIndividDeductRemain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"outIndividDeductRemain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"inFamilyDeductTotal"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"outFamilyDeductTotal"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"inFamilyDeductRemain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"outFamilyDeductRemain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"inIndividMaxTotal"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"outIndividMaxTotal"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"inIndividMaxRemain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"outIndividMaxRemain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"inFamilyMaxTotal"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"outFamilyMaxTotal"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"inFamilyMaxRemain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"outFamilyMaxRemain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"incopay"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"incopayOutpatient"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"outcopay"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"incoinsurance"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"outcoinsurance"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tier1Deduct"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tier1FamilyDeduct"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tier1Remain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tier1FamilyRemain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tier1MaxDeduct"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tier1FamilyMaxDeduct"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tier1MaxRemain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tier1FamilyMaxRemain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tier1Copay"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tier1Coinsurance"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"notes"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"rfaPhysicianFaxRequestType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"pr2PhysicianFaxRequestType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"pr2FaxDTO"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"rfaFaxDTO"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"imageDTO"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"href"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"mediaType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/vnd.sh-v1.0+json"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"encodedImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"minWidth"</span><span class="p">:</span><span class="w"> </span><span class="mi">1225</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"minHeight"</span><span class="p">:</span><span class="w"> </span><span class="mi">1585</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"partner"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"chosenFacilityId"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"appointmentStart"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"appointmentEnd"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"sendFaxToClaimsAdministrator"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"sendFaxToClaimsAdministratorCompany"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
 <h3 id="http-request">HTTP Request</h3>
 
